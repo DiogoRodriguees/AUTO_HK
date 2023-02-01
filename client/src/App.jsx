@@ -1,32 +1,20 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import AddVeiculo from './components/AddVeiculo';
+import BuscaVeiculo from './components/BuscaVeiculo';
+import ListaVeiculo from './components/ListaVeiculo';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <header>AUTO HK
-        <input type="text" placeholder='BUSCAR'/>
-      </header>
+      <BuscaVeiculo/>
       <div>
-        <div>
-          <h2>VEICULO</h2>
-          <button>+</button>
-        </div>
+        <AddVeiculo/>
 
-        <div>
-          <div>
-            <h3>Lista de veiculos</h3>
-          </div>
-          <div>
-            <h3>Detalhes</h3>
-            <ul>
-              {/* cards com os carros */}
-            </ul>
-          </div>
-        </div>
+        <ListaVeiculo/>
       </div>
       
     </div>
