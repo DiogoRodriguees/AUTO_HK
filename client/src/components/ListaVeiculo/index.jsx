@@ -1,12 +1,14 @@
+import "./style.css"
+
 export default function ListaVeiculo(){
     return (
-        <div>
-            <div>
-                <h3>Lista de veiculos</h3>
+        <div className="container">
+            <div className="lista-container">
+                <h3 className="lista-titulo">Lista de veiculos</h3>
             </div>
-            <div>
-                <h3>Detalhes</h3>
-                <ul>
+            <div className="detalhes-container">
+                <h3 className="detalhes-titulo">Detalhes</h3>
+                <ul className="detalhes-lista">
                     {/* cards com os carros */}
                 </ul>
             </div>

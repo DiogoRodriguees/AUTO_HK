@@ -1,0 +1,28 @@
+.cabecalho-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    background-color: #603FFF;
+    align-items: center;
+}
+
+.cabecalho-titulo{
+    margin-left: 25px;
+    color: white;
+}
+
+.cabecalho-busca{
+    width: 50%;
+    height: 90%;
+
+    border: none;
+    border-radius: 5px;
+    background-color: #4D33CC;
+}
+
+.cabecalho-busca::placeholder{
+    color: white;
+    padding-left: 25px;
+    font-size: 20px;
+}

@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.lista-container{
+    width: 50%;
+
+}
+
+.lista-titulo{
+    font-family: sans-serif;
+}
+
+
+.detalhes-container{
+    width: 50%;
+}
+
+.detalhes-titulo{
+    font-family: sans-serif;
+
+}
+
+.detalhes-lista{}

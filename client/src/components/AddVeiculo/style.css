@@ -1,4 +1,18 @@
 .busca-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.busca-button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.busca-titulo{
+    font-family: sans-serif;
 }
