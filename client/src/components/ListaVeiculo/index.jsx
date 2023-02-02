@@ -1,3 +1,4 @@
+import CardVeiculo from "../CardVeiculo";
 import "./style.css"
 
 export default function ListaVeiculo(){
@@ -5,12 +6,13 @@ export default function ListaVeiculo(){
         <div className="container">
             <div className="lista-container">
                 <h3 className="lista-titulo">Lista de veiculos</h3>
+                <ul className="detalhes-lista">
+                    <CardVeiculo />
+                </ul>
             </div>
             <div className="detalhes-container">
                 <h3 className="detalhes-titulo">Detalhes</h3>
-                <ul className="detalhes-lista">
-                    {/* cards com os carros */}
-                </ul>
+                
             </div>
         </div>
     )

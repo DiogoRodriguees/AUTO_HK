@@ -1,0 +1,25 @@
+.card-container{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 75px;
+    border-radius: 2px;
+}
+
+.informacoes-veiculo{
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.card-marca{
+}
+
+.card-nome-veiculo{
+    color: #603FFF;
+}
+
+.card-ano-veiculo{}
+
+.status-veiculo{}
