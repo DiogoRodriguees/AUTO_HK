@@ -1,0 +1,44 @@
+.container-details {
+    background-color: #fff;
+    padding: 10px 15px;
+    width: 80%;
+    height: auto;
+}
+
+.nome-veiculo{
+    color: #603FFF;
+}
+
+.container-marca-ano{
+    display: flex;
+}
+
+.container-marca-ano div{
+    width: 50%;
+
+}
+
+.descricao-veiculo{
+    margin: 40px 0px;
+}
+
+.container-edit{
+    border-top: 1px solid #0d0d0d;
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-edit img{
+    height: 25px;
+    width: 25px;
+}
+
+.container-edit button{
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 3px;
+    background-color: #6b6b6b;
+}

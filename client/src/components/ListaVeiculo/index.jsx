@@ -1,3 +1,4 @@
+import CardDetails from "../CarDetails";
 import CardVeiculo from "../CardVeiculo";
 import "./style.css"
 
@@ -12,7 +13,7 @@ export default function ListaVeiculo(){
             </div>
             <div className="detalhes-container">
                 <h3 className="detalhes-titulo">Detalhes</h3>
-                
+                <CardDetails/>
             </div>
         </div>
     )
