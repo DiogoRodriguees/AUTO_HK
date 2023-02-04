@@ -6,23 +6,16 @@
     margin-top: 25px;
 }
 
+.container h3{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
 .lista-container{
     width: 50%;
 
 }
 
-.lista-titulo{
-    font-family: sans-serif;
-}
-
-
 .detalhes-container{
     width: 50%;
 }
-
-.detalhes-titulo{
-    font-family: sans-serif;
-
-}
-
-.detalhes-lista{}

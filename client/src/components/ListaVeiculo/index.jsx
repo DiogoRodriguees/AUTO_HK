@@ -6,9 +6,9 @@ export default function ListaVeiculo(){
         <div className="container">
             <div className="lista-container">
                 <h3 className="lista-titulo">Lista de veiculos</h3>
-                <ul className="detalhes-lista">
+                <div className="detalhes-lista">
                     <CardVeiculo />
-                </ul>
+                </div>
             </div>
             <div className="detalhes-container">
                 <h3 className="detalhes-titulo">Detalhes</h3>
