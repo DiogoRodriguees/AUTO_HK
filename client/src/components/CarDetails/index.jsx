@@ -22,7 +22,7 @@ export default function CardDetails(){
                 distinctio laboriosam pariatur dolore soluta perferendis placeat
                 itaque natus blanditiis neque perspiciatis. Quo, et.
             </p>
-
+            
             <dir class="container-edit">
                 <button>Editar</button>
                 <img src="../../src/img/ticket.png" alt="" />
