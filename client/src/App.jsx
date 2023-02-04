@@ -7,7 +7,9 @@ function App() {
 
   return (
     <div className="App">
+
       <BuscaVeiculo/>
+      
       <div className="container-app">
         <AddVeiculo/>
 

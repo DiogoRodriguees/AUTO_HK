@@ -9,7 +9,7 @@ export default function CardVeiculo(){
                 <p className="card-ano-veiculo">2000</p>
             </div>
             
-            <button className="status-veiculo">V</button>
+            <button className="status-veiculo">v</button>
         </div>
     )
 }

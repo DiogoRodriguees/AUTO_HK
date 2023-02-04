@@ -1,7 +1,7 @@
 .cabecalho-container{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     height: 65px;
     background-color: #603FFF;
     align-items: center;
@@ -14,7 +14,7 @@
 
 .cabecalho-busca{
     width: 50%;
-    height: 90%;
+    height: 80%;
 
     border: none;
     border-radius: 5px;
@@ -22,7 +22,7 @@
 }
 
 .cabecalho-busca::placeholder{
-    color: white;
+    color: #f2f2f2be;
     padding-left: 25px;
     font-size: 20px;
 }

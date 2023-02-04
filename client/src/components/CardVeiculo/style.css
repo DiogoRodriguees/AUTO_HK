@@ -24,16 +24,17 @@
 }
 
 .card-marca{
-    background-color: #fff;
+    font-weight: 400;
 }
 
 .card-nome-veiculo{
     color: #603FFF;
+    font-weight: 500;
 }
 
 .card-ano-veiculo{
-    background-color: #fff;
-
+    color: #acacac;
+    font-weight: 500;
 }
 
 .status-veiculo{
@@ -44,4 +45,8 @@
     border-radius: 50%;
     height: 25px;
     width: 25px;
+}
+
+.status-veiculo:hover{
+    cursor: pointer;
 }
