@@ -3,7 +3,7 @@ import "./style.css"
 export default function CardDetails({marca, ano, nomeDoCarro}){
     return (
         <div className="container-details">
-            <h2 className="nome-veiculo">{nomeDoCarro}o</h2>
+            <h2 className="nome-veiculo">{nomeDoCarro}</h2>
 
             <div className="container-marca-ano">
                 <div>

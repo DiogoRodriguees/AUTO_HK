@@ -21,3 +21,18 @@
 .detalhes-container{
     width: 50%;
 }
+
+@media (max-width: 1000px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .lista-container, .detalhes-container{
+        width: 100%;
+    }
+
+    .detalhes-container{
+        margin-top: 30px;
+    }
+    
+}

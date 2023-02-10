@@ -1,15 +1,16 @@
 .cabecalho-container{
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     height: 65px;
-    background-color: #603FFF;
+    background-color: #307FFF;
     align-items: center;
 }
 
 .cabecalho-titulo{
     margin-left: 25px;
     color: white;
+    font-weight: 500;
 }
 
 .cabecalho-busca{
@@ -18,7 +19,9 @@
 
     border: none;
     border-radius: 5px;
-    background-color: #4D33CC;
+    background-color: #20A1E8;
+    margin-right: 10px;
+    
 }
 
 .cabecalho-busca::placeholder{
