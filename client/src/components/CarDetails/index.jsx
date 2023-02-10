@@ -1,18 +1,18 @@
 import "./style.css"
 
-export default function CardDetails(){
+export default function CardDetails({marca, ano, nomeDoCarro}){
     return (
         <div className="container-details">
-            <h2 className="nome-veiculo">Nome do carro</h2>
+            <h2 className="nome-veiculo">{nomeDoCarro}o</h2>
 
             <div className="container-marca-ano">
                 <div>
                     <p>Marca</p>
-                    <p>Fiat</p>
+                    <p>{marca}</p>
                 </div>
                 <div>
                     <p>Ano</p>
-                    <p>2016</p>
+                    <p>{ano}</p>
                 </div>
             </div>
 

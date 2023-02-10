@@ -8,12 +8,12 @@ export default function ListaVeiculo(){
             <div className="lista-container">
                 <h3 className="lista-titulo">Lista de veiculos</h3>
                 <div className="detalhes-lista">
-                    <CardVeiculo />
+                    <CardVeiculo marca={"Fiat"} ano={2000} nomeDoCarro={'Palio 5.0'}/>
                 </div>
             </div>
             <div className="detalhes-container">
                 <h3 className="detalhes-titulo">Detalhes</h3>
-                <CardDetails/>
+                <CardDetails marca={"Fiat"} ano={2000} nomeDoCarro={'Palio 5.0'}/>
             </div>
         </div>
     )
