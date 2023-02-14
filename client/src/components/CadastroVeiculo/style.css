@@ -16,11 +16,9 @@
 .status-veiculo{
     height: 25px;
     width: 25px;
-}
-
-.status-veiculo:hover{
     cursor: pointer;
 }
+
 
 .informacoes-container{
     display: flex;

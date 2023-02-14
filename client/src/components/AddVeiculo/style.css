@@ -15,11 +15,9 @@
     color: #f7f7f7;
     font-size:30px;
     background-color: #202020;
-}
-
-.busca-button:hover {
     cursor: pointer;
 }
+
 .busca-titulo{
     font-family: sans-serif;
 }
