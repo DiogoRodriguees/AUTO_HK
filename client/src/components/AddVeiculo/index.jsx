@@ -6,19 +6,22 @@ import Modal from "../Modal";
 import "./style.css";
 
 export default function AddVeiculo(adicionarVeiculo) {
-    const [addVeiculoStatus, setAddVeiculoStatus] = useState(false);
+    const [novoVeiculo, setNovoVeiculo] = useState(false);
 
     function adicionarVeiculo() {
-        let status = addVeiculoStatus ? false : true
-        setAddVeiculoStatus(status);
+        let status = novoVeiculo ? false : true
+        setNovoVeiculo(status);
     }
 
     
     return (
         <div className="busca-container">
+
             <h2 className="busca-titulo">VEÍCULO</h2>
+
             <BsPlusCircleFill size="30px"className="add-veiculo" onClick={adicionarVeiculo}/>
-            {addVeiculoStatus && <Modal fecharModal={adicionarVeiculo}/>}
+            {novoVeiculo && <Modal fecharModal={adicionarVeiculo}/>}
+
         </div>
     );
 }
