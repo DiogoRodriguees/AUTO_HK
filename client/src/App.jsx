@@ -7,11 +7,10 @@ import AddVeiculo from "./components/AddVeiculo";
 
 import "./App.css";
 
-
 function App() {
     const [list, setList] = useState([]);
 
-    const getList = async (text='') => {
+    const getList = async (text = "") => {
         try {
             const { data } = await api.get(`/vehicle/find?q=${text}`);
             setList(data);
@@ -24,7 +23,6 @@ function App() {
     useEffect(() => {
         getList();
     }, []);
-
 
     return (
         <div className="container-app-externo">
