@@ -13,12 +13,15 @@ export default function CardVeiculo({ marca, ano, nomeDoCarro, veiculoSelecionad
 
     return (
         <div className="card-container" id={id} onClick={veiculoSelecionado}>
-            <div className="informacoes-veiculo" >
-                <p>
-                    <b>{marca}</b>
-                </p>
+            <div className="informacoes-veiculo">
+                <div className="marca-ano">
+                    <p>
+                        <b>{marca}</b>
+                    </p>
+                    <p className="card-ano-veiculo">{ano}</p>
+                </div>
+
                 <p className="card-nome-veiculo">{nomeDoCarro}</p>
-                <p className="card-ano-veiculo">{ano}</p>
             </div>
 
             <AiFillTag
