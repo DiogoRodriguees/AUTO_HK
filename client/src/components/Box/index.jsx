@@ -3,7 +3,7 @@ import "./style.css"
 
 const Box = ({titulo, componente}) => {
   return (
-      <div className="lista-container">
+      <div className="box-container">
           <h3>{titulo}</h3>
           {componente}
       </div>
