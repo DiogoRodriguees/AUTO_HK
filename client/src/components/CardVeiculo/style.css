@@ -25,10 +25,7 @@
     height: 25%;
     margin: 3px;
     margin-left: 15px;
-}
-
-.card-marca {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .card-nome-veiculo {
@@ -51,11 +48,9 @@
     transform: scale(1.15);
 }
 
-
-@media (max-width: "600px"){
-    .card-container{
+@media (max-width: "600px") {
+    .card-container {
         width: 100%;
         margin: 0;
-        
     }
 }

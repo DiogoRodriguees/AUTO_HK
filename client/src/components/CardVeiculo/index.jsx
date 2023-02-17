@@ -2,7 +2,6 @@ import { AiFillTag } from "react-icons/ai";
 
 import "./style.css"
 import { useState } from "react";
-import MarcaNome from "../MarcaNome";
 
 export default function CardVeiculo({ marca, ano, nomeDoCarro, veiculoSelecionado, id, vendido }) {
     const [statusVeicule, setStatusVeicule] = useState();
@@ -15,7 +14,7 @@ export default function CardVeiculo({ marca, ano, nomeDoCarro, veiculoSelecionad
     return (
         <div className="card-container" id={id} onClick={veiculoSelecionado}>
             <div className="informacoes-veiculo" >
-                <p className="card-marca">
+                <p>
                     <b>{marca}</b>
                 </p>
                 <p className="card-nome-veiculo">{nomeDoCarro}</p>
