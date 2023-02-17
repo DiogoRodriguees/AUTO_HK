@@ -1,5 +1,5 @@
 import { Formik, Field, Form } from "formik";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { api } from "../../services/api";
 
 import "./style.css";
@@ -92,7 +92,6 @@ export default function Modal({
     return (
         <div className="cadastro-container">
             <Formik
-                // required
                 onSubmit={onSubmit}
                 initialValues={{
                     name: name,
