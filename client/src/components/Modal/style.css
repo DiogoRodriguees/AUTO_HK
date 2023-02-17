@@ -85,4 +85,9 @@
     height: 25px;
     width: 20px;
     cursor: pointer;
+    border-radius: 0px;
+}
+
+.descricao-titulo {
+    font-weight: bold;
 }
