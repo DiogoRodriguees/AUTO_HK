@@ -19,6 +19,9 @@
 @media (max-width: 1000px) {
     .container {
         flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+        height: auto;
     }
 
     .detalhes-container {

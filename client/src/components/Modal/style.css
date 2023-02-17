@@ -86,6 +86,10 @@
     cursor: pointer;
 }
 
+#btnDelete {
+    background-color: #FF5154;
+}
+
 .vendido,
 .nao-vendido {
     height: 25px;

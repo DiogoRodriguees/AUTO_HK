@@ -28,6 +28,7 @@ export default function Lista({ list }) {
                 componente={
                     veiculoSelecionado && (
                         <CardDetails
+                            id={veiculoSelecionado.id}
                             marca={veiculoSelecionado.brand}
                             ano={veiculoSelecionado.year}
                             nomeDoCarro={veiculoSelecionado.name}

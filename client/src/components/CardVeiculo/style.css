@@ -41,24 +41,21 @@
     font-weight: 500;
 }
 
-.status-veiculo {
-    width: 25px;
-    height: 25px;
-
-    margin-right: 15px;
-    background-color: #fff;
-
-    border: none;
-    border-radius: 50%;
-
-    cursor: pointer;
-}
-
 .ticket-venda {
     cursor: pointer;
     transition: 0.8;
+    margin-right: 15px;
 }
 
 .ticket-venda:hover {
     transform: scale(1.15);
+}
+
+
+@media (max-width: "600px"){
+    .card-container{
+        width: 100%;
+        margin: 0;
+        
+    }
 }

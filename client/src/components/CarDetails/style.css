@@ -66,3 +66,11 @@
     rotate: 270deg;
     cursor: pointer;
 }
+
+
+@media (max-width: 600px) {
+    .container-details{
+        height: 100%;
+        width: 90%;
+    }
+}
