@@ -1,4 +1,4 @@
-![imagem do projeto](./img/img_projeto)
+![imagem do projeto](./img/img_projeto.png)
 
 # BACKEND
 Desenvolver uma **API RESTful** com **Node** utilizando **Prisma**, que utilize todos os métodos  
