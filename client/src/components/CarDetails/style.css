@@ -13,6 +13,8 @@
 
 .nome-veiculo {
     color: #307fff;
+    font-size: 30px;
+    margin: 10px 0px;
 }
 
 .container-marca-ano {
@@ -28,7 +30,7 @@
 }
 
 .descricao-veiculo {
-    height: 40%;
+    height: 30%;
     font-size: 15px;
     margin-top: 10px;
 }
