@@ -1,23 +1,19 @@
 .busca-container{
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #000;
+
+    margin-top: 20px;
     padding: 10px 0px;
+
+    border-bottom: 1px solid #000;
 }
 
-.busca-button{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    border: none;
-    color: #f7f7f7;
-    font-size:30px;
-    background-color: #202020;
-    cursor: pointer;
-}
-
-.busca-titulo{
+.busca-container h2{
     font-family: sans-serif;
+}
+
+.add-veiculo{
+    cursor: pointer;
 }

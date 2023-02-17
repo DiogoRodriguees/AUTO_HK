@@ -1,21 +1,40 @@
+import { api } from "./services/api";
+import { useEffect, useState } from "react";
+
+import List from "./components/List";
+import Header from "./components/Header";
 import AddVeiculo from "./components/AddVeiculo";
-import BuscaVeiculo from "./components/BuscaVeiculo";
-import ListaVeiculo from "./components/ListaVeiculo";
+
 import "./App.css";
-import CadastroVeiculo from "./components/CadastroVeiculo";
+
 
 function App() {
+    const [list, setList] = useState([]);
+
+    const getList = async (text='') => {
+        try {
+            const { data } = await api.get(`/vehicle/find?q=${text}`);
+            setList(data);
+            console.log(data);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    useEffect(() => {
+        getList();
+    }, []);
+
+
     return (
-        <div className="App">
-            <section className="container-app-externo">
-                <BuscaVeiculo />
+        <div className="container-app-externo">
+            <Header buscarVeiculo={getList} />
 
-                <div className="container-app">
-                    <AddVeiculo />
+            <div className="container-app">
+                <AddVeiculo />
 
-                    <ListaVeiculo />
-                </div>
-            </section>
+                <List list={list} />
+            </div>
         </div>
     );
 }
