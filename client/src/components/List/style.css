@@ -16,24 +16,9 @@
     margin-bottom: 0px;
 }
 
-.lista-container {
-    width: 50%;
-    max-height: 70vh;
-}
-
-.detalhes-container {
-    width: 50%;
-    max-height: 70vh;
-}
-
 @media (max-width: 1000px) {
     .container {
         flex-direction: column;
-    }
-
-    .lista-container,
-    .detalhes-container {
-        width: 100%;
     }
 
     .detalhes-container {

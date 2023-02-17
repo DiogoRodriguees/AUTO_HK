@@ -4,39 +4,39 @@ import { useState } from "react";
 import CardList from "../CardList";
 
 import "./style.css";
+import Box from "../Box";
 
 export default function Lista({ list }) {
     const [veiculoSelecionado, setVeiculoSelecionado] = useState();
 
     function inspecionarVeiculo(e) {
-        let position = e.target.id
-        if(veiculoSelecionado !== list[position])
-            setVeiculoSelecionado(list[position])
-        else
-            setVeiculoSelecionado('')
-        
+        let position = e.target.id;
+        if (veiculoSelecionado !== list[position])
+            setVeiculoSelecionado(list[position]);
+        else setVeiculoSelecionado("");
     }
 
     return (
         <div className="container">
-            <div className="lista-container">
-                <h3>Lista de veiculos</h3>
+            <Box
+                titulo={"Lista de veiculos"}
+                componente={ <CardList list={list} clicou={inspecionarVeiculo} /> }
+            />
 
-                <CardList list={list} clicou={inspecionarVeiculo} />
-            </div>
-
-            <div className="detalhes-container">
-                <h3>Detalhes</h3>
-                {veiculoSelecionado && (
-                    <CardDetails
-                        marca={veiculoSelecionado.brand}
-                        ano={veiculoSelecionado.year}
-                        nomeDoCarro={veiculoSelecionado.name}
-                        details={veiculoSelecionado.description}
-                        vendido={veiculoSelecionado.sold}
-                    />
-                )}
-            </div>
+            <Box
+                titulo={"Detalhes"}
+                componente={
+                    veiculoSelecionado && (
+                        <CardDetails
+                            marca={veiculoSelecionado.brand}
+                            ano={veiculoSelecionado.year}
+                            nomeDoCarro={veiculoSelecionado.name}
+                            details={veiculoSelecionado.description}
+                            vendido={veiculoSelecionado.sold}
+                        />
+                    )
+                }
+            />
         </div>
     );
 }

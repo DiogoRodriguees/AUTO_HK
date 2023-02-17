@@ -2,6 +2,7 @@ import { AiFillTag } from "react-icons/ai";
 
 import "./style.css"
 import { useState } from "react";
+import MarcaNome from "../MarcaNome";
 
 export default function CardVeiculo({ marca, ano, nomeDoCarro, veiculoSelecionado, id, vendido }) {
     const [statusVeicule, setStatusVeicule] = useState();

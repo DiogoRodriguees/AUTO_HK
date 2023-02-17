@@ -12,14 +12,13 @@ export default function Header({buscarVeiculo}) {
     }, [text])
 
     return (
-        <header className="cabecalho-container">
-            <h1>
+        <header className="cabecalho">
+            <div>
                 <ImDroplet size="30px" />
-                AUTO HK
-            </h1>
+                <h1>AUTO HK</h1>
+            </div>
 
             <input
-                className="cabecalho-busca"
                 type="text"
                 placeholder="BUSCAR"
                 onChange={(e) => setText(e.target.value)}

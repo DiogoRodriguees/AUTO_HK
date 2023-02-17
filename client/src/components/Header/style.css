@@ -1,4 +1,4 @@
-.cabecalho-container {
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +9,7 @@
     background-color: #307fff;
 }
 
-.cabecalho-container h1 {
+.cabecalho div {
     gap: 10px;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@
     margin-left: 25px;
 }
 
-.cabecalho-busca {
+.cabecalho input {
     width: 40%;
     height: 80%;
 
@@ -36,13 +36,33 @@
     padding-left: 20px;
 }
 
-.cabecalho-busca::placeholder {
+.cabecalho input::placeholder {
     color: #f2f2f2be;
     font-size: 18px;
 }
 
-.cabecalho-busca:focus {
+.cabecalho input:focus {
     color: white;
     box-shadow: 0 0 0 0;
     outline: 0;
+    font-size: 16px;
+}
+
+
+@media (max-width: 600px){
+    .cabecalho{
+        flex-direction: column;
+        height: 120px;
+        justify-content: center;
+    }
+
+    .cabecalho div{
+        margin-left: 0;
+    }
+
+    .cabecalho input{
+        height: 50px;
+        margin-right: 0;
+        min-width: 80%;
+    }
 }
