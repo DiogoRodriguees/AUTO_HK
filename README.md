@@ -1,18 +1,22 @@
 # AUTO_HK
 Repositório do projeto de treino da Haken
 
-# FRONT END
+# BACKEND
+### API endpoints 
+* `GET /veiculos`: Retorna todos os veiculos
+* `GET /veiculos/find`: Retorna os veículos de acordo com o termo passado parâmetro `q`
+* `GET /veiculos/{id}`: Retorna os detalhes do veículo
+* `POST /veiculos`: Adiciona um novo veículo
+* `PUT /veiculos/{id}`:Atualiza os dados de um veículo
+* `PATCH /veiculos/{id}}`: Atualiza apenas alguns dados do veículo
+* `DELETE /veiculos/{id}`: Apaga o veículo
 
-## Criação e Compilação
-O projeto foi criado utilizando o vite com o comando <br> 
-`npm create vite@latest client --template react` <br><br>
 
-Para rodar o projeto digite o comando <br> 
-`npm run dev` 
-
-## Tecnologias
-O projeto foi desenvolvido utilizando a biblioteca javascript [react](https://pt-br.reactjs.org/docs/getting-started.html), utilizando o axious para se comunicar com o backend
-
-# BACK END
-Informções serão adicionadas em brave
-
+# FRONTEND
+### **Especificaçôes**
+* Consumir API criado acima
+* Criar uma tela que tenha
+  * Listagem de veiculos
+  * Detalhes do veículo
+  * Busca de veículo
+  * Formulário para criação/edicção de um veículos
