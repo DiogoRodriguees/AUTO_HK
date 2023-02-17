@@ -3,6 +3,7 @@ import './style.css'
 
 const ConfirmaDelete = ({confirmou}) => {
   return (
+    <div className="container-externo">
       <div className='confirma-delete'>
           <h2>Tem certeza q deseja remover esse veiculo?</h2>
           <div className='container-btn'>
@@ -10,6 +11,7 @@ const ConfirmaDelete = ({confirmou}) => {
               <button onClick={() => confirmou(false)}>NÃO</button>
           </div>
       </div>
+    </div>
   );
 }
 

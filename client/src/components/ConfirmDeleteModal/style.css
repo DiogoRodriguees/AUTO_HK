@@ -18,6 +18,16 @@
     justify-content: center;
 }
 
+.container-externo{
+    background-color: #0d0d0da9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0%;
+    left: 0;
+}
+
 .container-btn {
     gap: 20px;
     display: flex;
