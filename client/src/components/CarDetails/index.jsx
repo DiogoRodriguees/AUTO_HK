@@ -36,7 +36,7 @@ export default function CardDetails({
                 <button onClick={editarVeiculo}>Editar</button>
 
                 <AiFillTag
-                    size="40px"
+                    size="45px"
                     className="ticket-venda"
                     color={vendido ? "#307FFF" : ""}
                 />
