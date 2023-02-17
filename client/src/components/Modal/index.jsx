@@ -87,82 +87,83 @@ export default function Modal({
     }
 
     return (
-        <div className="cadastro-container">
-            <Formik
-                onSubmit={onSubmit}
-                initialValues={{
-                    name: name,
-                    year: year,
-                    brand: brand,
-                    description: description,
-                    sold: sold,
-                }}
-                component={({ values, handleChange }) => (
-                    <Form>
-                        <h1>Novo Veiculo</h1>
+        <div className="container-fora">
+            <div className="cadastro-container">
+                <Formik
+                    onSubmit={onSubmit}
+                    initialValues={{
+                        name: name,
+                        year: year,
+                        brand: brand,
+                        description: description,
+                        sold: sold,
+                    }}
+                    component={({ values, handleChange }) => (
+                        <Form>
+                            <h1>Novo Veiculo</h1>
 
-                        <div className="informacoes-container">
-                            <Field
-                                type="text"
-                                name="name"
-                                placeholder="Veiculo"
-                                className="input"
-                            />
+                            <div className="informacoes-container">
+                                <Field
+                                    type="text"
+                                    name="name"
+                                    placeholder="Veiculo"
+                                    className="input"
+                                />
+                                <Field
+                                    type="number"
+                                    name="year"
+                                    placeholder="Ano"
+                                    className="input"
+                                />
 
-                            <Field
-                                type="number"
-                                name="year"
-                                placeholder="Ano"
-                                className="input"
-                            />
+                                <Field
+                                    type="text"
+                                    name="brand"
+                                    placeholder="Marca"
+                                    className="input"
+                                />
+                                <Field
+                                    type="checkbox"
+                                    name="sold"
+                                    className="nao-vendido"
+                                    onClick={() => {
+                                        alteraBotao(values.sold);
+                                    }}
+                                />
+                                {vendido}
+                            </div>
 
-                            <Field
-                                type="text"
-                                name="brand"
-                                placeholder="Marca"
-                                className="input"
-                            />
-                            <Field
-                                type="checkbox"
-                                name="sold"
-                                className="nao-vendido"
-                                onClick={() => {
-                                    alteraBotao(values.sold);
-                                }}
-                            />
-                            {vendido}
-                        </div>
+                            <div className="descriçao">
+                                <label className="descricao-titulo">
+                                    Descricao
+                                </label>
+                                <Field
+                                    type="text"
+                                    name="description"
+                                    className="box-descricao"
+                                />
+                            </div>
 
-                        <div className="descriçao">
-                            <label className="descricao-titulo">
-                                Descricao
-                            </label>
-                            <Field
-                                type="text"
-                                name="description"
-                                className="box-descricao"
-                            />
-                        </div>
-
-                        <div className="cadastro-botoes">
-                            <button type="submit">
-                                {editar ? "Salvar" : "ADD"}
-                            </button>
-
-                            <button onClick={fecharModal}>Fechar</button>
-                            {editar && (
-                                <button
-                                    id="btnDelete"
-                                    onClick={() => setConfirmaDelete(true)}
-                                >
-                                    Deletar
+                            <div className="cadastro-botoes">
+                                <button type="submit">
+                                    {editar ? "Salvar" : "ADD"}
                                 </button>
-                            )}
-                        </div>
-                    </Form>
-                )}
-            />
-            {confirmaDelete && <ConfirmaDelete confirmou={confirmou} />}
+
+                                <button onClick={fecharModal}>Fechar</button>
+                                {editar && (
+                                    <button
+                                        id="btnDelete"
+                                        onClick={() => setConfirmaDelete(true)}
+                                    >
+                                        Deletar
+                                    </button>
+                                )}
+                            </div>
+                        </Form>
+                    )}
+                />
+                {confirmaDelete && <ConfirmaDelete confirmou={confirmou} />}
+            </div>
         </div>
     );
 }

@@ -3,7 +3,8 @@
     height: 90%;
 
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: #f7f7f7;
+    box-shadow: 4px 4px 10px #0d0d0d2d;
 }
 
 .container-details h3 {
@@ -44,11 +45,11 @@
 .container-edit button {
     width: 150px;
     height: 50px;
-    
+
     border: none;
     border-radius: 3px;
-    background-color: #307FFF;
-    
+    background-color: #307fff;
+
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -59,12 +60,10 @@
 .ticket-venda {
     rotate: 270deg;
     cursor: pointer;
-
 }
 
-
 @media (max-width: 600px) {
-    .container-details{
+    .container-details {
         height: 100%;
         width: 90%;
     }

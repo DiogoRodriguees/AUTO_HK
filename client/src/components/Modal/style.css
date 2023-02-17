@@ -1,8 +1,8 @@
 .cadastro-container {
-    width: 60vw;
+    width: 50vw;
     height: 70vh;
 
-    background-color: #c7c7c7;
+    background-color: #f2f2f2;
     font-family: "Poppins", sans-serif;
 
     position: absolute;
@@ -10,7 +10,7 @@
 
     top: 15%;
     left: 20%;
-    padding: 20px;
+    padding: 20px 60px;
 }
 
 .cadastro-container h1 {
@@ -28,10 +28,10 @@
     border: none;
     border-bottom: 1px solid #0d0d0d;
 
-    width: 40%;
+    width: 48%;
     height: 25px;
     margin-bottom: 30px;
-    background-color: #c7c7c7;
+    background-color: #f2f2f2;
 }
 
 .input:focus {
@@ -47,7 +47,7 @@
     margin: 10px 0px 20px 0px;
 
     border: none;
-    background-color: #cecece;
+    background-color: #e7e7e7;
 }
 
 .box-descricao:focus {
@@ -72,13 +72,25 @@
     cursor: pointer;
     background-color: #307fff;
 
-    color: white;
+    color: #f2f2f2;
     font-size: 16px;
     font-weight: 600;
 }
 
+.cadastro-botoes button:hover {
+    color: #307fff;
+    border: 1px solid #307fff;
+    background-color: #f2f2f2;
+}
+
 #btnDelete {
     background-color: #ff5154;
+}
+
+#btnDelete:hover {
+    background-color: #f2f2f2;
+    border: 1px solid #ff5154;
+    color: #ff5154;
 }
 
 .nao-vendido {
@@ -90,4 +102,14 @@
 
 .descricao-titulo {
     font-weight: bold;
+}
+
+.container-fora {
+    background-color: #0d0d0da9;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    top: 0%;
+    left: 0;
 }
