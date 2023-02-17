@@ -1,5 +1,6 @@
 import React from 'react'
 import "./style.css"
+
 const MarcaNome = ({textoNegrito, texto}) => {
   return (
     <div>

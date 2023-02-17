@@ -17,7 +17,6 @@ export default function Modal({
 }) {
     const [vendido, setVendido] = useState("Não Vendido");
     const [confirmaDelete, setConfirmaDelete] = useState(false);
-    const [remover, setRemover] = useState(false);
 
     const addVeiculo = async (veiculo) => {
         try {
@@ -66,19 +65,17 @@ export default function Modal({
     };
 
     function deletarVeiculo() {
-
         deletar();
         fecharModal();
         window.location.reload();
     }
 
     function confirmou(status) {
-        if(status){
-            deletarVeiculo()
-        }else{
-            setConfirmaDelete(false)
+        if (status) {
+            deletarVeiculo();
+        } else {
+            setConfirmaDelete(false);
         }
-
     }
 
     function alteraBotao(status) {
@@ -154,7 +151,10 @@ export default function Modal({
 
                             <button onClick={fecharModal}>Fechar</button>
                             {editar && (
-                                <button id="btnDelete" onClick={() => setConfirmaDelete(true)}>
+                                <button
+                                    id="btnDelete"
+                                    onClick={() => setConfirmaDelete(true)}
+                                >
                                     Deletar
                                 </button>
                             )}
