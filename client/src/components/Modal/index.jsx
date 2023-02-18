@@ -2,8 +2,9 @@ import { Formik, Field, Form } from "formik";
 import { useState } from "react";
 import { api } from "../../services/api";
 
-import "./style.css";
 import ConfirmaDelete from "../ConfirmDeleteModal";
+
+import "./style.css";
 
 export default function Modal({
     fecharModal,
@@ -54,7 +55,7 @@ export default function Modal({
         fecharModal();
         window.location.reload();
     }
-
+    const teste = 'remover depois'
     const deletar = async () => {
         try {
             const { data } = await api.delete(`/vehicle/${id}`);
