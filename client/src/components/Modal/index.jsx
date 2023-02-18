@@ -117,11 +117,23 @@ export default function Modal({
                                 />
 
                                 <Field
+                                    component="select"
                                     type="text"
                                     name="brand"
                                     placeholder="Marca"
-                                    className="input"
-                                />
+                                    className="input-marca"
+                                >
+                                    <option value="Chevrolet">Chevrolet</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Fiat">Fiat</option>
+                                    <option value="Volkswagem">
+                                        Volkswagem
+                                    </option>
+                                    <option value="Porsche">Porsche</option>
+                                    <option value="Volvo">Volvo</option>
+                                    <option value="Toyota">Toyota</option>
+                                </Field>
+
                                 <Field
                                     type="checkbox"
                                     name="sold"
@@ -138,7 +150,8 @@ export default function Modal({
                                     Descricao
                                 </label>
                                 <Field
-                                    type="text"
+                                    component="textarea"
+                                    type="textarea"
                                     name="description"
                                     className="box-descricao"
                                 />
