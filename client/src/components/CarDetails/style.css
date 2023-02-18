@@ -59,6 +59,12 @@
     cursor: pointer;
 }
 
+.container-edit button:hover {
+    background-color: #f2f2f2;
+    border: 1px solid #307fff;
+    color: #307fff;
+}
+
 .ticket-venda {
     rotate: 270deg;
     cursor: pointer;
