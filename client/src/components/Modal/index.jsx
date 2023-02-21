@@ -10,7 +10,7 @@ export default function Modal({
     fecharModal,
     name = "",
     year = 0,
-    brand = "",
+    brand = "Chevrolet",
     description = "",
     sold = false,
     id = 0,
