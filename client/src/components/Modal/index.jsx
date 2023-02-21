@@ -17,6 +17,16 @@ export default function Modal({
     editar = false,
 }) {
     const [vendido, setVendido] = useState("Não Vendido");
+    const [tipoDeInput, setTipoDeInput] = useState("select")
+    const [marcas, setMarcas] = useState([
+        "Chevrolet",
+        "Ford",
+        "Fiat",
+        "Volkswagem",
+        "Porsche",
+        "Volvo",
+        "Toyota",
+    ]);
     const [confirmaDelete, setConfirmaDelete] = useState(false);
 
     const addVeiculo = async (veiculo) => {
@@ -91,6 +101,7 @@ export default function Modal({
         <div className="container-fora">
             <div className="cadastro-container">
                 <Formik
+                    required
                     onSubmit={onSubmit}
                     initialValues={{
                         name: name,
@@ -118,21 +129,15 @@ export default function Modal({
                                 />
 
                                 <Field
-                                    component="select"
+                                    component={tipoDeInput}
                                     type="text"
                                     name="brand"
                                     placeholder="Marca"
                                     className="input-marca"
                                 >
-                                    <option value="Chevrolet">Chevrolet</option>
-                                    <option value="Ford">Ford</option>
-                                    <option value="Fiat">Fiat</option>
-                                    <option value="Volkswagem">
-                                        Volkswagem
-                                    </option>
-                                    <option value="Porsche">Porsche</option>
-                                    <option value="Volvo">Volvo</option>
-                                    <option value="Toyota">Toyota</option>
+                                    {marcas.map((marca) => (
+                                        <option value={marca}>{marca}</option>
+                                    ))}
                                 </Field>
 
                                 <Field
@@ -144,6 +149,7 @@ export default function Modal({
                                     }}
                                 />
                                 {vendido}
+                                {/* <label htmlFor="sold">{vendido}</label> */}
                             </div>
 
                             <div className="descriçao">
