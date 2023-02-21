@@ -1,19 +1,7 @@
 import { prisma } from "../services/prisma.js";
 
 export const createCars = async (data) => {
-    const cars = await prisma.cars.create({
-        data,
-        select: {
-            id: true,
-            veiculo: true,
-            marca: true,
-            ano: true,
-            desc: true,
-            vendido: true,
-            created: true,
-            updated: true,
-        },
-    });
+    const cars = await prisma.cars.create({ data , });
     return cars;
 };
 
@@ -44,6 +32,7 @@ export const getById = async (id) => {
 
 export const getByParams = async (query) => {
     const { q } = query;
+
     const cars = await prisma.cars.findMany({
         where: {
             OR: [
@@ -52,6 +41,7 @@ export const getByParams = async (query) => {
             ]
         }
     });
+
     return cars;
 };
 

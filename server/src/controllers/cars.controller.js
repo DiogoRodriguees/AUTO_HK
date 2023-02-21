@@ -24,7 +24,7 @@ export const get = async (req, res) => {
 export const getId = async (req, res) => {
     try {
         const cars = await getById(Number(req.params.id));
-        res.status(200).send(user);
+        res.status(200).send(cars);
     } catch (e) {
         res.status(400).send(e);
     }
