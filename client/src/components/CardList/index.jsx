@@ -10,11 +10,11 @@ const CardList = ({list , clicou}) => {
             {list.map((veiculo, index) => (
                 <CardVeiculo
                     id={index}
-                    marca={veiculo.brand}
-                    ano={veiculo.year}
-                    nomeDoCarro={veiculo.name}
+                    marca={veiculo.marca}
+                    ano={veiculo.ano}
+                    nomeDoCarro={veiculo.veiculo}
                     key={veiculo.id}
-                    vendido={veiculo.sold}
+                    vendido={veiculo.vendido}
                     veiculoSelecionado={clicou}
                 />
             ))}

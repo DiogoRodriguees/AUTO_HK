@@ -1,7 +1,7 @@
 import { api } from "./services/api";
 import { useEffect, useState } from "react";
 
-import List from "./components/List";
+import Main from "./components/Main";
 import Header from "./components/Header";
 import AddVeiculo from "./components/AddVeiculo";
 
@@ -12,7 +12,8 @@ function App() {
 
     const getList = async (text = "") => {
         try {
-            const { data } = await api.get(`/vehicle/find?q=${text}`);
+            // const { data } = await api.get(`/vehicle/find?q=${text}`);
+            const { data } = await api.get(`/cars/find?q=${text}`);
             setList(data);
             console.log(data);
         } catch (error) {
@@ -31,7 +32,7 @@ function App() {
             <div className="container-app">
                 <AddVeiculo />
 
-                <List list={list} />
+                <Main list={list} />
             </div>
         </div>
     );

@@ -6,7 +6,7 @@ import CardList from "../CardList";
 import "./style.css";
 import Box from "../Box";
 
-export default function Lista({ list }) {
+export default function Main({ list }) {
     const [veiculoSelecionado, setVeiculoSelecionado] = useState();
 
     function inspecionarVeiculo(e) {
@@ -29,11 +29,11 @@ export default function Lista({ list }) {
                     veiculoSelecionado && (
                         <CardDetails
                             id={veiculoSelecionado.id}
-                            marca={veiculoSelecionado.brand}
-                            ano={veiculoSelecionado.year}
-                            nomeDoCarro={veiculoSelecionado.name}
-                            details={veiculoSelecionado.description}
-                            vendido={veiculoSelecionado.sold}
+                            marca={veiculoSelecionado.marca}
+                            ano={veiculoSelecionado.ano}
+                            nomeDoCarro={veiculoSelecionado.veiculo}
+                            details={veiculoSelecionado.desc}
+                            vendido={veiculoSelecionado.vendido}
                         />
                     )
                 }
