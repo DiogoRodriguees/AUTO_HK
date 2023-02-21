@@ -37,7 +37,7 @@ export default function Modal({
         }
     };
 
-    function onSubmit(values, action) {
+    function onSubmit(values) {
         let novoVeiculo = {
             name: values.name,
             brand: values.brand,
@@ -55,7 +55,7 @@ export default function Modal({
         fecharModal();
         window.location.reload();
     }
-    const teste = 'remover depois'
+
     const deletar = async () => {
         try {
             const { data } = await api.delete(`/vehicle/${id}`);
